@@ -17,7 +17,37 @@ $("document").ready(function() {
       var url = JSON.stringify(result[i].link);
       // name of the post
       var title = JSON.stringify(result[i].headline);
-      $("#content").html(JSON.stringify(result[i]));
+      // post's image
+      var  image = JSON.stringify(result[i].image);
+      // number of upvotes
+      var upVotesNum = JSON.stringify(result[i].upVotes.length);
+      // author picture
+      var authorPicture = JSON.stringify(result[i].author.picture);
+      // author's username
+      var userName = JSON.stringify(result[i].author.username);
+
+      if (result[i].hasOwnProperty('image') && result[i].image)
+      {
+        console.log(JSON.stringify(result[i].image));
+        image = JSON.stringify(result[i].image);
+      }
+      else
+      {
+        image = authorPicture;
+      }
+
+      // if there's an image add it
+      // if ((image))
+      // {
+         $("#content").append('<div class="col-xs-4">
+         <img src=' + image + ' class=" img-responsive" >
+         <h5>' + title +'</h5>
+         </div>');
+      // }
+      // else
+      // {
+      //   $("#content").append('<div class="col-xs-2"><img src=' + authorPicture + ' class=" img-responsive" ></div>');
+      // }
     }
     //$("#content").html(JSON.stringify(result[0]));
 
