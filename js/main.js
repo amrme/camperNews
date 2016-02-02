@@ -26,22 +26,25 @@ $("document").ready(function() {
       // author's username
       var userName = JSON.stringify(result[i].author.username);
 
+      // if the post has an image
       if (result[i].hasOwnProperty('image') && result[i].image)
       {
-        console.log(JSON.stringify(result[i].image));
-        image = JSON.stringify(result[i].image);
+        //console.log(JSON.stringify(result[i].image));
+         image = JSON.stringify(result[i].image);
       }
+      // if not use user's image
       else
       {
-        image = authorPicture;
+         image = authorPicture;
       }
 
       // if there's an image add it
       // if ((image))
       // {
          $("#content").append('<div class="col-xs-4">
-         <img src=' + image + ' class=" img-responsive" >
-         <h5>' + title +'</h5>
+         <a href="' +url.replace(/\"/g, "")+ '" target="_blank"><img src=' + image + ' class=" img-responsive news-image" >
+         <h5 class="news-title">' + title.replace(/\"/g, "") +'</h5></a>
+         <p class="upvotes">' + upVotesNum + '</p>
          </div>');
       // }
       // else
