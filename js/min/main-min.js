@@ -1,1 +1,1 @@
-$("document").ready(function(){});
+$("document").ready(function(){var n="http://www.freecodecamp.com/news/hot";$.getJSON(n,function(n){for(var t=JSON.stringify(n),i=0;i<n.length;i++){var e=JSON.stringify(n[i].link),r=JSON.stringify(n[i].headline);$("#content").html(JSON.stringify(n[i]))}})});
