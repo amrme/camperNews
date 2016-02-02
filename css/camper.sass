@@ -4,3 +4,43 @@ html
   -moz-background-size: cover
   -o-background-size: cover
   background-size: cover
+
+#content
+  div
+    //border: 1px solid red
+    margin-right: -30px
+    img
+      height: 200px
+      width: 100%
+      object-fit: cover
+      margin-left: -15px
+
+    .news-title
+      display: none
+
+    transition: all 0.15s ease-in
+    &:hover
+      // dim image
+      .dim-layer
+        height: 200px
+        width: 88%
+        position: absolute
+        left: 0
+        bottom: 0
+        padding-right: -40px
+        background-color: rgba(0, 0, 0, 0.7)
+
+
+      // show title
+      .news-title
+        display: block
+        position: absolute
+        left: 5px
+        bottom: 15px
+        margin-right: 50px
+        color: white
+
+
+
+    .upvotes
+      display: none

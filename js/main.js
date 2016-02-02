@@ -42,7 +42,9 @@ $("document").ready(function() {
       // if ((image))
       // {
          $("#content").append('<div class="col-xs-4">
-         <a href="' +url.replace(/\"/g, "")+ '" target="_blank"><img src=' + image + ' class=" img-responsive news-image" >
+         <a href="' +url.replace(/\"/g, "")+ '" target="_blank">
+         <img src=' + image + ' class=" img-responsive news-image" >
+         <div class="dim-layer"></div>
          <h5 class="news-title">' + title.replace(/\"/g, "") +'</h5></a>
          <p class="upvotes">' + upVotesNum + '</p>
          </div>');
