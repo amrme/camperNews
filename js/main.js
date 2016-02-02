@@ -41,7 +41,7 @@ $("document").ready(function() {
       // if there's an image add it
       // if ((image))
       // {
-         $("#content").append('<div class="col-xs-4">
+         $("#content").append('<div class="col-md-4 col-sm-6 col-xs-12">
          <a href="' +url.replace(/\"/g, "")+ '" target="_blank">
          <img src=' + image + ' class=" img-responsive news-image" >
          <div class="dim-layer"></div>
