@@ -45,8 +45,9 @@ $("document").ready(function() {
          <a href="' +url.replace(/\"/g, "")+ '" target="_blank">
          <img src=' + image + ' class=" img-responsive news-image" >
          <div class="dim-layer"></div>
-         <h5 class="news-title">' + title.replace(/\"/g, "") +'</h5></a>
+         <h5 class="news-title">' + title.replace(/\"/g, "") +'</h5>
          <p class="upvotes"><i class="fa fa-heart heart"></i> ' + upVotesNum + '</p>
+         </a>
          </div>');
       // }
       // else
