@@ -1,0 +1,102 @@
+
+html
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+#content
+  position: absolute
+  top: 150px
+  div
+    //border: 1px solid red
+    margin-right: -30px
+    img
+      height: 200px
+      width: 100%
+      // on medium screens
+      @media screen and (max-width: 900px)
+        height: 300px
+      // on phones
+      @media screen and (max-width: 600px)
+        height: 400px
+      object-fit: cover
+      margin-left: -15px
+
+    .news-title, .upvotes
+      display: none
+
+    transition: all 0.15s ease-in
+    &:hover
+      // dim image
+      .dim-layer
+        height: 200px
+        width: 88%
+        position: absolute
+        left: 0
+        bottom: 0
+        padding-right: -40px
+        background-color: rgba(0, 0, 0, 0.7)
+        // on medium screens
+        @media screen and (max-width: 900px)
+          height: 300px
+          width: 92%
+        // on phones
+        @media screen and (max-width: 600px)
+          height: 400px
+          width: 94%
+
+
+      // show title
+      .news-title
+        display: block
+        position: absolute
+        left: 5px
+        bottom: 15px
+        margin-right: 50px
+        color: white
+        // on phones
+        @media screen and (max-width: 600px)
+          bottom: 30px
+          font-size: 2em
+
+      .upvotes
+        display: block
+        font-size: 3em
+        position: absolute
+        left: 20%
+        top: 20px
+        margin-right: 50px
+        color: white
+        @media screen and (max-width: 600px)
+          top: 100px
+          left: 30%
+        .heart
+          color: red
+          font-size: 1.2em
+
+
+// add cover image
+.cover-image
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 200px
+  background: url("https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg") no-repeat center center
+  background-size: 100%
+  background-color: green
+  margin-bottom: 0px
+  p
+    position: absolute
+    top: 4%
+    left: 1%
+    z-index: 99
+    font-size: 1em
+    color: white
+    .fa-fire
+      color: red
+
+// style the footer
+.footer
+  margin-top: 30px
