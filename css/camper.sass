@@ -6,6 +6,8 @@ html
   background-size: cover
 
 #content
+  position: absolute
+  top: 150px
   div
     //border: 1px solid red
     margin-right: -30px
@@ -51,3 +53,25 @@ html
         .heart
           color: red
           font-size: 1.2em
+
+
+// add cover image
+.cover-image
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 200px
+  background: url("https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg") no-repeat center center
+  background-size: 100%
+  background-color: green
+  margin-bottom: 0px
+  p
+    position: absolute
+    top: 4%
+    left: 1%
+    z-index: 99
+    font-size: 1em
+    color: white
+    .fa-fire
+      color: red
