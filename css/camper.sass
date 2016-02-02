@@ -15,7 +15,7 @@ html
       object-fit: cover
       margin-left: -15px
 
-    .news-title
+    .news-title, .upvotes
       display: none
 
     transition: all 0.15s ease-in
@@ -40,7 +40,14 @@ html
         margin-right: 50px
         color: white
 
-
-
-    .upvotes
-      display: none
+      .upvotes
+        display: block
+        font-size: 3em
+        position: absolute
+        left: 20%
+        top: 20px
+        margin-right: 50px
+        color: white
+        .heart
+          color: red
+          font-size: 1.2em

@@ -46,7 +46,7 @@ $("document").ready(function() {
          <img src=' + image + ' class=" img-responsive news-image" >
          <div class="dim-layer"></div>
          <h5 class="news-title">' + title.replace(/\"/g, "") +'</h5></a>
-         <p class="upvotes">' + upVotesNum + '</p>
+         <p class="upvotes"><i class="fa fa-heart heart"></i> ' + upVotesNum + '</p>
          </div>');
       // }
       // else
